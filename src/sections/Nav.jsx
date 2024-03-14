@@ -14,26 +14,26 @@ function Nav() {
       <nav className="flex flex-row items-center justify-between ">
         <div className="flex flex-row gap-10 items-center">
           <LogoBrand />
-          <ul className="flex-1 flex justify-end items-center gap-6 max-lg:hidden ">
+          <ul className="flex-1 flex justify-end items-center text-grayishViolet gap-6 max-lg:hidden ">
             <li>
-              <a href="#" className="text-sm text-grayishViolet font-bold">
+              <a href="#" className="text-sm  hover:text-black  font-bold">
                 Features
               </a>
             </li>
             <li>
-              <a href="#" className="text-sm text-grayishViolet font-bold">
+              <a href="#" className="text-sm  hover:text-black font-bold">
                 Pricing
               </a>
             </li>
             <li>
-              <a href="#" className="text-sm text-grayishViolet font-bold">
+              <a href="#" className="text-sm  hover:text-black font-bold">
                 Resources
               </a>
             </li>
           </ul>
         </div>
-        <div className="flex flex-row gap-10 items-center max-md:hidden">
-          <a href="" className="text-grayishViolet font-bold text-sm">
+        <div className="flex flex-row gap-10 items-center max-lg:hidden">
+          <a href="" className="text-grayishViolet  hover:text-black font-bold text-sm">
             Login
           </a>
           <Button label={"Sign Up"} border={"text-white py-2 px-8"} />

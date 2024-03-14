@@ -11,8 +11,10 @@ function App() {
       <main className="max-container">
         <Nav/>
         <Hero/>
+        <section className="bg-grayCollection-200">
         <Input/>
         <Statistics/>
+        </section>
         <Advertise/>
         <Footer/>
       </main>
