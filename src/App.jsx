@@ -6,6 +6,7 @@ import Nav from "./sections/Nav";
 import Statistics from "./sections/Statistics";
 
 function App() {
+  console.log("Rerender! APP")
   return (
     <>
       <main className="max-container">

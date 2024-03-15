@@ -8,6 +8,8 @@ import {
 import { LogoBrand } from "../assets/images/LogoBrand";
 
 function Footer() {
+  console.log("Rerender! Footer")
+
   return (
     <section className="max-container py-14 bg-veryDarkViolet lg:px-12 ">
       <div className="flex flex-col lg:flex-row items-center lg:items-start  gap-8 lg:gap-20 xl:gap-32 text-center">

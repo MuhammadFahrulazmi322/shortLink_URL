@@ -16,7 +16,7 @@ function Button({
         : "bg-cyan hover:bg-opacity-95 text-white "
     }
     bg-cyan hover:bg-lightCyan  text-white
-    py-4 px-12 max-sm:py-3 max-sm:px-8 font-bold text-base max-sm:text-sm rounded-full duration-300`}
+    py-4 px-12 font-bold text-base rounded-full duration-300`}
     >
       {label}
     </button>

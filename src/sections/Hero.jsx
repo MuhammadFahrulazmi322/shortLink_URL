@@ -3,6 +3,8 @@ import { illustrationWorking } from "../assets/images";
 import Button from "../components/Buttons";
 
 function Hero() {
+  console.log("Rerender! Hero")
+
   return (
     <section className="lg:px-12 pb-48 py-10 max-container overflow-hidden">
       <div className="px-4 lg:px-0 flex flex-col lg:flex-row-reverse items-center justify-center gap-4 lg:gap-8">

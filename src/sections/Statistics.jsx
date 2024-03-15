@@ -6,6 +6,8 @@ import {
 } from "../assets/images";
 
 function Statistics() {
+  console.log("Rerender! Statistic")
+
   return (
     <section className="max-container lg:px-12">
       <div className="flex flex-col items-center gap-4 px-4 pb-12">

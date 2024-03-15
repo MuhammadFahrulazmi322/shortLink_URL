@@ -4,6 +4,8 @@ import { LogoBrand } from "../assets/images/LogoBrand";
 import Button from "../components/Buttons";
 
 function Nav() {
+  console.log("Rerender! Nav")
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleToggleMobileMenu = () => {
