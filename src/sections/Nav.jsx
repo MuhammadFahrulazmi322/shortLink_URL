@@ -1,10 +1,12 @@
 import React, { useState } from "react";
-import { iconHumburger } from "../assets/images/index";
+
 import { LogoBrand } from "../assets/images/LogoBrand";
 import Button from "../components/Buttons";
+import { iconHumburger } from "@/assets/images";
+import Image from "next/image";
 
 function Nav() {
-  console.log("Rerender! Nav")
+  console.log("Rerender! Nav");
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -35,13 +37,16 @@ function Nav() {
           </ul>
         </div>
         <div className="flex flex-row gap-10 items-center max-lg:hidden">
-          <a href="" className="text-grayishViolet  hover:text-black font-bold text-sm">
+          <a
+            href=""
+            className="text-grayishViolet  hover:text-black font-bold text-sm"
+          >
             Login
           </a>
           <Button label={"Sign Up"} border={"text-white py-2 px-8"} />
         </div>
         <div className="lg:hidden md:block">
-          <img
+          <Image
             src={iconHumburger}
             alt="ic_humburger"
             width={24}

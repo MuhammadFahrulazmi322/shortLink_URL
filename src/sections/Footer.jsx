@@ -6,9 +6,10 @@ import {
   iconTwitter,
 } from "../assets/images";
 import { LogoBrand } from "../assets/images/LogoBrand";
+import Image from "next/image";
 
 function Footer() {
-  console.log("Rerender! Footer")
+  console.log("Rerender! Footer");
 
   return (
     <section className="max-container py-14 bg-veryDarkViolet lg:px-12 ">
@@ -19,13 +20,22 @@ function Footer() {
         <div className="flex flex-col lg:items-start gap-4 text-white">
           <p className="text-white">Features</p>
           <div className="flex flex-col lg:items-start items-center gap-1">
-            <a href="#" className="text-sm font-extralight  text-white hover:text-cyan">
+            <a
+              href="#"
+              className="text-sm font-extralight  text-white hover:text-cyan"
+            >
               Link Shortening
             </a>
-            <a href="#" className="text-sm font-extralight  text-white hover:text-cyan">
+            <a
+              href="#"
+              className="text-sm font-extralight  text-white hover:text-cyan"
+            >
               Branded Links
             </a>
-            <a href="#" className="text-sm font-extralight  text-white hover:text-cyan">
+            <a
+              href="#"
+              className="text-sm font-extralight  text-white hover:text-cyan"
+            >
               Analytics
             </a>
           </div>
@@ -34,13 +44,22 @@ function Footer() {
         <div className="flex flex-col gap-4 text-white">
           <p className="text-white">Resources</p>
           <div className="flex flex-col lg:items-start items-center gap-1">
-            <a href="#" className="text-sm font-extralight  text-white hover:text-cyan">
+            <a
+              href="#"
+              className="text-sm font-extralight  text-white hover:text-cyan"
+            >
               Blog
             </a>
-            <a href="#" className="text-sm font-extralight  text-white hover:text-cyan">
+            <a
+              href="#"
+              className="text-sm font-extralight  text-white hover:text-cyan"
+            >
               Developers
             </a>
-            <a href="#" className="text-sm font-extralight  text-white hover:text-cyan">
+            <a
+              href="#"
+              className="text-sm font-extralight  text-white hover:text-cyan"
+            >
               Support
             </a>
           </div>
@@ -49,32 +68,44 @@ function Footer() {
         <div className="flex flex-col gap-4 ">
           <p className="text-white">Company</p>
           <div className="flex flex-col lg:items-start items-center gap-1">
-            <a href="#" className="text-sm font-extralight text-white hover:text-cyan">
+            <a
+              href="#"
+              className="text-sm font-extralight text-white hover:text-cyan"
+            >
               About
             </a>
-            <a href="#" className="text-sm font-extralight text-white hover:text-cyan">
+            <a
+              href="#"
+              className="text-sm font-extralight text-white hover:text-cyan"
+            >
               Our Team
             </a>
-            <a href="#" className="text-sm font-extralight text-white hover:text-cyan">
+            <a
+              href="#"
+              className="text-sm font-extralight text-white hover:text-cyan"
+            >
               Careers
             </a>
-            <a href="#" className="text-sm font-extralight text-white hover:text-cyan">
+            <a
+              href="#"
+              className="text-sm font-extralight text-white hover:text-cyan"
+            >
               Contact
             </a>
           </div>
         </div>
         <div className="flex flex-row gap-4">
           <a href="">
-            <img src={iconFacebook} alt="ic_fb" width={18} />
+            <Image src={iconFacebook} alt="ic_fb" width={18} />
           </a>
           <a href="">
-            <img src={iconTwitter} alt="ic_tw" width={18} />
+            <Image src={iconTwitter} alt="ic_tw" width={18} />
           </a>
           <a href="">
-            <img src={iconPinterest} alt="ic_pt" width={18} />
+            <Image src={iconPinterest} alt="ic_pt" width={18} />
           </a>
           <a href="">
-            <img src={iconInstagram} alt="ic_ig" width={18} />
+            <Image src={iconInstagram} alt="ic_ig" width={18} />
           </a>
         </div>
       </div>

@@ -4,9 +4,10 @@ import {
   iconDetailRecords,
   iconFullyCustom,
 } from "../assets/images";
+import Image from "next/image";
 
 function Statistics() {
-  console.log("Rerender! Statistic")
+  console.log("Rerender! Statistic");
 
   return (
     <section className="max-container lg:px-12">
@@ -20,10 +21,10 @@ function Statistics() {
         </p>
       </div>
       <div className="flex flex-col lg:flex-row items-center px-4 lg:px-8 gap-12 lg:gap-2 lg:pb-48">
-      {/* Brand Recognition */}
+        {/* Brand Recognition */}
         <div className="flex flex-col items-center lg:items-start gap-4 px-4 lg:relative lg:-translate-y-8">
           <div className="rounded-full bg-darkViolet p-4">
-            <img src={iconBrandRecognation} alt="" />
+            <Image src={iconBrandRecognation} alt="" />
           </div>
           <h2 className="text-xl font-bold text-veryDarkBlue">
             Brand Recognition
@@ -42,7 +43,7 @@ function Statistics() {
             <div className="bg-cyan p-1 h-10 w-1 lg:hidden max-md:block"></div>
 
             <div className="rounded-full bg-darkViolet p-4">
-              <img src={iconDetailRecords} alt="" />
+              <Image src={iconDetailRecords} alt="" />
             </div>
           </div>
           <h2 className="text-xl font-bold text-veryDarkBlue">
@@ -61,7 +62,7 @@ function Statistics() {
             <div className="bg-cyan p-1 h-10 w-1 lg:hidden max-md:block"></div>
 
             <div className="rounded-full bg-darkViolet p-4">
-              <img src={iconFullyCustom} alt="" />
+              <Image src={iconFullyCustom} alt="" />
             </div>
           </div>
           <h2 className="text-xl font-bold text-veryDarkBlue">
