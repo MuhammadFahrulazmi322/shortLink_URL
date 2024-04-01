@@ -9,13 +9,14 @@ export default {
     fontFamily: {
       sans: ['"Poppins"', ...defaultTheme.fontFamily.sans],
     },
+    //in next js using bg-[url()] to make bg image
     // backgroundImage: {
-    //   "input-bg-mobile": "url(src/assets/images/bg-shorten-mobile.svg)",
-    //   "input-bg-desktop": "url(src/assets/images/bg-shorten-desktop.svg)",
+    //   // "input-bg-mobile": "url(../src/assets/images/bg-shorten-mobile.svg)",
+    //   // "input-bg-desktop": "url(src/assets/images/bg-shorten-desktop.svg)",
 
-    //   "advertise-mobile": "url(src/assets/images/bg-boost-mobile.svg)",
+    //   // "advertise-mobile": "url(src/assets/images/bg-boost-mobile.svg)",
 
-    //   "advertise-desktop": "url(src/assets/images/bg-boost-desktop.svg)",
+    //   // "advertise-desktop": "url(src/assets/images/bg-boost-desktop.svg)",
     // },
     colors: {
       cyan: "hsl(180, 66%, 49%)",

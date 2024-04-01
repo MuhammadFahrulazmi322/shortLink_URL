@@ -7,7 +7,6 @@ import {
 import Image from "next/image";
 
 function Statistics() {
-  console.log("Rerender! Statistic");
 
   return (
     <section className="max-container lg:px-12">

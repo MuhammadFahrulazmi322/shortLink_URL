@@ -9,7 +9,6 @@ import { LogoBrand } from "../assets/images/LogoBrand";
 import Image from "next/image";
 
 function Footer() {
-  console.log("Rerender! Footer");
 
   return (
     <section className="max-container py-14 bg-veryDarkViolet lg:px-12 ">

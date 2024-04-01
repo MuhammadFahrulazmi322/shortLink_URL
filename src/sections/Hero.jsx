@@ -4,7 +4,6 @@ import Button from "../components/Buttons";
 import Image from "next/image";
 
 function Hero() {
-  console.log("Rerender! Hero");
 
   return (
     <section className="lg:px-12 pb-48 py-10 max-container overflow-hidden">

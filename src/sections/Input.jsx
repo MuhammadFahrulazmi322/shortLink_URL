@@ -1,23 +1,29 @@
-import React, { memo, useState } from "react";
+import React, { memo, useState, useEffect } from "react";
 import Button from "../components/Buttons";
 import Result from "../components/Result";
+import Image from "next/image";
 
 function Input() {
   const [inputValue, setInputValue] = useState("");
   const [data, setData] = useState([]);
   const [copyIndex, setCopyIndex] = useState(null);
   const [alertInput, setAlertInput] = useState(false);
+
+  useEffect(() => {
+    // Ambil data dari local storage saat komponen pertama kali dimuat
+    const storedData = localStorage.getItem("shortlinkData");
+    if (storedData) {
+      setData(JSON.parse(storedData));
+    }
+  }, []); // Array kosong agar useEffect hanya dijalankan sekali saat komponen dimuat
+
   const handleOnchange = (e) => {
     setInputValue(e.target.value);
-    if (e.target.value === "") {
-      setAlertInput(true);
-    } else {
-      setAlertInput(false);
-    }
+    setAlertInput(e.target.value === "");
   };
+
   const handleSubmit = async () => {
     const uri = encodeURIComponent(inputValue.toString());
-
     if (uri !== "") {
       try {
         const res = await fetch("/api/shortlink", {
@@ -33,13 +39,21 @@ function Input() {
         }
 
         const dataJSON = await res.json();
-        setData([...data, { input: inputValue, result: dataJSON.result_url }]);
+        const newData = { input: inputValue, result: dataJSON.result_url };
+        setData([...data, newData]);
+
+        // Simpan data baru ke local storage
+        localStorage.setItem(
+          "shortlinkData",
+          JSON.stringify([...data, newData])
+        );
+
         setInputValue("");
       } catch (error) {
         console.error("Fetch error:", error);
       }
     } else {
-      setAlertInput(!alertInput);
+      setAlertInput(true);
     }
   };
 
@@ -57,9 +71,10 @@ function Input() {
       <div
         className={`flex flex-col lg:flex-row p-8 lg:py-14  rounded-xl gap-4 bg-darkViolet 
           ${alertInput && "lg:pt-14 lg:pb-8"}
-          bg-input-bg-mobile bg-right-top
-          lg:bg-input-bg-desktop bg-no-repeat lg:object-contain lg:bg-center lg:first:bg-cover
+          bg-[url('/bg-shorten-mobile.svg')] bg-right-top
+          lg:bg-[url('/bg-shorten-desktop.svg')] bg-no-repeat lg:object-contain lg:bg-center lg:first:bg-cover
        `}
+      //  style={{backgroundImage:`url('/next.svg')`}}
       >
         <div className="flex flex-col lg:w-[80%] lg:text-lg gap-2">
           <input

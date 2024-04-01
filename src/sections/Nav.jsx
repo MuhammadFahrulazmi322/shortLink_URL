@@ -6,8 +6,7 @@ import { iconHumburger } from "@/assets/images";
 import Image from "next/image";
 
 function Nav() {
-  console.log("Rerender! Nav");
-
+  
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleToggleMobileMenu = () => {
