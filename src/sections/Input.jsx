@@ -69,12 +69,12 @@ function Input() {
   return (
     <section className="relative -translate-y-[6rem] px-4 flex flex-col lg:px-12">
       <div
-        className={`flex flex-col lg:flex-row p-8 lg:py-14  rounded-xl gap-4 bg-darkViolet 
+        className={`flex flex-col lg:flex-row p-8 lg:py-14  rounded-xl gap-4 bg-darkViolet mb-4
           ${alertInput && "lg:pt-14 lg:pb-8"}
           bg-[url('/bg-shorten-mobile.svg')] bg-right-top
           lg:bg-[url('/bg-shorten-desktop.svg')] bg-no-repeat lg:object-contain lg:bg-center lg:first:bg-cover
        `}
-      //  style={{backgroundImage:`url('/next.svg')`}}
+        //  style={{backgroundImage:`url('/next.svg')`}}
       >
         <div className="flex flex-col lg:w-[80%] lg:text-lg gap-2">
           <input

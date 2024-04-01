@@ -4,14 +4,13 @@ import Button from "../components/Buttons";
 import Image from "next/image";
 
 function Hero() {
-
   return (
     <section className="lg:px-12 pb-48 py-10 max-container overflow-hidden">
       <div className="px-4 lg:px-0 flex flex-col lg:flex-row-reverse items-center justify-center gap-4 lg:gap-8">
         <Image
           src={illustrationWorking}
           alt="illustrator"
-          className="relative translate-x-14 lg:translate-x-28 lg:w-[50%]"
+          className="relative translate-x-20 -translate-y-10 lg:-translate-y-0 max-w-md lg:max-w-xl lg:translate-x-32 lg:w-[50%]"
         />
         <div className="flex flex-col gap-6 lg:items-start lg:w-[50%] ">
           <h1 className="text-4xl lg:text-[48px] xl:text-[68px] lg:leading-tight lg:font-extrabold text-center lg:text-left font-bold text-veryDarkBlue">
