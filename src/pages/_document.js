@@ -3,7 +3,9 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
-      <Head title="Shorten URL" />
+      <Head>
+        <title>Shorten URL</title>
+      </Head>
       <body>
         <Main />
         <NextScript />
