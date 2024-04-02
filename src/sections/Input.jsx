@@ -80,7 +80,7 @@ function Input() {
           <input
             value={inputValue}
             type="text"
-            className={`p-2 lg:py-4 lg:px-8 rounded-lg placeholder:text-grayishViolet ${
+            className={`p-4 lg:py-4 lg:px-8 rounded-lg placeholder:text-grayishViolet ${
               alertInput && "border-red border-2 placeholder:text-red"
             }`}
             placeholder="Shorten a link here..."
