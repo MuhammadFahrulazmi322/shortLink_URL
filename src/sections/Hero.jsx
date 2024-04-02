@@ -12,7 +12,7 @@ function Hero() {
           alt="illustrator"
           className="relative translate-x-20 -translate-y-10 lg:-translate-y-0 max-w-md lg:max-w-xl lg:translate-x-32 lg:w-[50%]"
         />
-        <div className="flex flex-col gap-6 lg:items-start lg:w-[50%] ">
+        <div className="flex flex-col gap-6 lg:items-start lg:w-[50%] items-center">
           <h1 className="text-4xl lg:text-[48px] xl:text-[68px] lg:leading-tight lg:font-extrabold text-center lg:text-left font-bold text-veryDarkBlue">
             More than just shorter links
           </h1>
@@ -20,7 +20,9 @@ function Hero() {
             Build your brand's recognition and get detailed insights on how your
             links are performing
           </p>
-          <Button label={"Get Started"} />
+          <div className=" flex flex-col max-w-sm items-center">
+            <Button label={"Get Started"} />
+          </div>
         </div>
       </div>
     </section>

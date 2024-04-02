@@ -71,24 +71,24 @@ function Input() {
       <div
         className={`flex flex-col lg:flex-row p-8 lg:py-14  rounded-xl gap-4 bg-darkViolet mb-4
           ${alertInput && "lg:pt-14 lg:pb-8"}
-          bg-[url('/bg-shorten-mobile.svg')] bg-right-top
-          lg:bg-[url('/bg-shorten-desktop.svg')] bg-no-repeat lg:object-contain lg:bg-center lg:first:bg-cover
+          bg-input-bg-mobile bg-right-top
+          lg:bg-input-bg-desktop bg-no-repeat lg:object-contain lg:bg-center lg:first:bg-cover
        `}
         //  style={{backgroundImage:`url('/next.svg')`}}
       >
-        <div className="flex flex-col lg:w-[80%] lg:text-lg gap-2">
+        <div className="flex flex-col xl:w-[80%] lg:w-[70%] lg:text-lg gap-2">
           <input
             value={inputValue}
             type="text"
-            className={`p-4 lg:py-4 lg:px-8 rounded-lg placeholder:text-grayishViolet ${
-              alertInput && "border-red border-2"
+            className={`p-2 lg:py-4 lg:px-8 rounded-lg placeholder:text-grayishViolet ${
+              alertInput && "border-red border-2 placeholder:text-red"
             }`}
             placeholder="Shorten a link here..."
             onChange={handleOnchange}
           />
           {alertInput && <p className="text-red italic">Please add a link</p>}
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col xl:w-[20%] lg:w-[30%]">
           <Button
             label={"Shorten It!"}
             border={"rounded-lg text-white pt-5 pb-4"}

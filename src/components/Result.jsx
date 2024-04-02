@@ -15,7 +15,7 @@ function Result({ inputValue, result, onCopy, isCopied }) {
           label={isCopied ? "Copied!" : "Copy"}
           border={
             isCopied
-              ? "bg-darkViolet hover:bg-darkViolet text-white rounded-md px-6 py-[8px] text-md"
+              ? "bg-darkViolet text-white rounded-md px-6 py-[8px] text-md"
               : "rounded-md text-white px-8 py-[8px] text-md"
           }
           onClick={onCopy}

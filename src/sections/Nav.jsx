@@ -42,7 +42,7 @@ function Nav() {
           >
             Login
           </a>
-          <Button label={"Sign Up"} border={"text-white py-2 px-8"} />
+          <Button label={"Sign Up"} border={"text-white text-sm py-2 px-6"} />
         </div>
         <div className="lg:hidden md:block">
           <Image

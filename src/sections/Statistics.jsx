@@ -8,7 +8,7 @@ import Image from "next/image";
 
 function Statistics() {
   return (
-    <section className="max-container lg:px-12">
+    <section className="max-container lg:px-12 pb-20 lg:pb-0">
       <div className="flex flex-col items-center gap-4 px-4 pb-28">
         <h2 className="text-2xl lg:text-4xl font-bold text-veryDarkBlue">
           Advanced Statistics
@@ -18,13 +18,13 @@ function Statistics() {
           statistics dashboard.
         </p>
       </div>
-      <div className="flex flex-col lg:flex-row items-center px-4 lg:px-8 gap-12 lg:gap-0 lg:pb-48 ">
+      <div className="flex flex-col lg:flex-row items-center px-4 lg:px-8 gap-20 lg:gap-0 lg:pb-48 ">
         {/* Brand Recognition */}
         <div className="flex flex-col bg-white items-center lg:items-start gap-4 px-4 rounded-lg lg:relative lg:-translate-y-4">
-          <div className="rounded-full bg-darkViolet p-4 lg:relative lg:-translate-y-10">
+          <div className="rounded-full bg-darkViolet p-4 lg:relative lg:-translate-y-10 -translate-y-10">
             <Image src={iconBrandRecognation} alt="" />
           </div>
-          <div className="lg:relative lg:-translate-y-8 flex flex-col gap-4">
+          <div className="lg:relative lg:-translate-y-8 -translate-y-8 flex flex-col gap-4 items-center">
             <h2 className="text-xl font-bold text-veryDarkBlue">
               Brand Recognition
             </h2>
@@ -40,14 +40,13 @@ function Statistics() {
 
         {/* Detail Records */}
         <div className="flex flex-col bg-white items-center lg:items-start gap-4 px-4 rounded-lg lg:relative lg:translate-y-4">
-          <div className="flex flex-col items-center lg:relative lg:-translate-y-10">
+          <div className="flex flex-col items-center lg:relative lg:-translate-y-10 -translate-y-20">
             <div className="bg-cyan p-1 h-10 w-1 lg:hidden max-md:block"></div>
-
             <div className="rounded-full bg-darkViolet p-4">
               <Image src={iconDetailRecords} alt="" />
             </div>
           </div>
-          <div className="lg:relative lg:-translate-y-8 flex flex-col gap-4">
+          <div className="lg:relative lg:-translate-y-8 -translate-y-20 flex flex-col gap-4 items-center">
             <h2 className="text-xl font-bold text-veryDarkBlue">
               Detailed Records
             </h2>
@@ -61,15 +60,15 @@ function Statistics() {
         <div className="bg-cyan p-1 h-1 w-20 lg:block hidden"></div>
 
         {/* Fully Customizable */}
-        <div className="flex flex-col bg-white items-center lg:items-start gap-4 px-4 lg:relative lg:translate-y-12 rounded-lg">
-          <div className="flex flex-col items-center lg:relative lg:-translate-y-10">
+        <div className="flex flex-col bg-white items-center lg:items-start gap-4 px-4 lg:relative lg:translate-y-12 -translate-y-0 rounded-lg">
+          <div className="flex flex-col items-center lg:relative lg:-translate-y-10 -translate-y-20">
             <div className="bg-cyan p-1 h-10 w-1 lg:hidden max-md:block"></div>
 
             <div className="rounded-full bg-darkViolet p-4">
               <Image src={iconFullyCustom} alt="" />
             </div>
           </div>
-          <div className="lg:relative lg:-translate-y-8 flex flex-col gap-4">
+          <div className="lg:relative lg:-translate-y-8 -translate-y-20 flex flex-col gap-4 items-center">
             <h2 className="text-xl font-bold text-veryDarkBlue">
               Fully Customizable
             </h2>
