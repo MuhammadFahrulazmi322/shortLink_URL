@@ -19,6 +19,7 @@ export default {
     colors: {
       cyan: "hsl(180, 66%, 49%)",
       lightCyan: "#94E7E7",
+      bgGray: "hsl(230deg 25% 95.29%)",
       darkViolet: "hsl(257, 27%, 26%)",
       red: "hsl(0, 87%, 67%)",
       gray: "hsl(0, 0%, 75%)",

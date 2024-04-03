@@ -15,7 +15,7 @@ export default function Home() {
       <div className="max-container">
         <Nav />
         <Hero />
-        <section className="bg-grayCollection-200">
+        <section className="bg-bgGray">
           <Input />
           <Statistics />
         </section>
